@@ -1,6 +1,6 @@
 README
 ===========================
-I will briefly introduce several tricks I use for `sublime`. In general, `sublime` is a text editor which is popular among programmers to write codes. `Sublime` is also powerful and fascinating by its conveniency and multiple plug-in modules and packages. I use `sublime` to code python from time to time. My friends love it because it is easy to open and use.   
+I will briefly introduce several tricks I use for `sublime` in this file. In general, `sublime` is a text editor which is popular among programmers to write codes. `Sublime` is also powerful and fascinating by its conveniency and multiple plug-in modules and packages. I use `sublime` to code python from time to time. My friends love it because it is easy and fast to open and use.   
 
 In this file, I will mainly introduce `sublime` as a text editor, and use it to write SQL codes and deal with excel files.
 
@@ -22,20 +22,25 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Copy & Paste
     * Some Tips
     * Edit Transverted XML Files
+* [Tricks & Plug-ins](#tricks_and_plug-ins)
+    * View Bar
+    * Plug-ins
 
 ## Multiple Selections
 ------
 ### Introduction
-    We mainly discuss writing SQL codes here. It is common to write mutiple lines of SQL codes which differ by certain words. 
-    For example, when we do qualification check, we may write `select columnA from table`, `select columnB from table` and so on. 
-    People may use excel to generate such codes by putting word `select` in one column, column names in another column, 
-    and the rest of codes in one more column. This is a good way to write codes, but one may find it difficult to maintain such 
-    codes with excel. 
-    We will discuss these issues in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
-    
-    Sublime(and many other text editors/IDEs) have a multiple selection mode in which we can have more than one item selected at the same time.
-### 单行文本
-    Hello,大家好，我是果冻虾仁。
+We mainly discuss writing SQL codes here. It is common to write mutiple lines of SQL codes which differ by certain words. For example, when we do qualification check, we may write `select columnA from table`, `select columnB from table` and so on. People may use excel to generate such codes by putting word `select` in one column, column names in another column, and the rest of codes in one more column. This is a good way to write codes, but one may find it difficult to maintain such codes with excel. We will discuss these issues in detail in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
+
+Sublime(and many other text editors/IDEs) have a multiple selection mode in which we can have more than one item selected at the same time. In that mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode(I will upload gif figures later).
+### Activate Multiple Selection Module
+  There are many ways to activate the multiple selection mode. One can search that online for more details. Ways I know are as following:
+```
+1.Hold `CTRL` and left click on different places.
+2.Click on `SHIFT + RIGHT MOUSE BUTTON`, then scroll down/up.
+3.Select text fields you wanna edit and press `CTRL + SHIFT + L`.
+4.For items/words selected, press `CTRL + F` and then `ALT + ENTER`.
+```
+  There are other ways to activate the mode and you can view/add key bindings in sublime by clicking `Preferences -> Key Bindings` button. 
 在一行开头加入1个Tab或者4个空格。
 ### 文本块
 #### 语法1
