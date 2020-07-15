@@ -1,6 +1,6 @@
 README
 ===========================
-I will briefly introduce several tricks I use for `sublime` in this file. In general, `sublime` is a text editor which is popular among programmers to write codes. `Sublime` is also powerful and fascinating by its conveniency and multiple plug-in modules and packages. I use `sublime` to code python from time to time. My friends love it because it is easy to open and use.   
+I will briefly introduce several tricks I use for `sublime`. In general, `sublime` is a text editor which is popular among programmers to write codes. `Sublime` is also powerful and fascinating by its conveniency and multiple plug-in modules and packages. I use `sublime` to code python from time to time. My friends love it because it is easy to open and use.   
 
 In this file, I will mainly introduce `sublime` as a text editor, and use it to write SQL codes and deal with excel files.
 
