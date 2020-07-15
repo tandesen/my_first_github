@@ -14,7 +14,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
 
 ****
 ## Content
-* [Multiple Selections](#multiple_selection)
+* [multiple selections](#multiple-selections)
     * Introduction
     * Activate Multiple Selection Module
     * Tricks & Examples
@@ -26,7 +26,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * View Bar
     * Plug-ins
 
-## Multiple Selections
+## multiple selections
 ------
 ### Introduction
 We mainly discuss writing SQL codes here. It is common to write mutiple lines of SQL codes which differ by certain words. For example, when we do qualification check, we may write `select columnA from table`, `select columnB from table` and so on. People may use excel to generate such codes by putting word `select` in one column, column names in another column, and the rest of codes in one more column. This is a good way to write codes, but one may find it difficult to maintain such codes with excel. We will discuss these issues in detail in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
