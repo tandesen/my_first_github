@@ -1,0 +1,17 @@
+select nick_name from tds group by nick_name order by nick_name; 
+select champion from tds group by champion order by champion; 
+select position from tds group by position order by position; 
+select game_type from tds group by game_type order by game_type; 
+select date from tds group by date order by date; 
+select total_time from tds group by total_time order by total_time; 
+select gold from tds group by gold order by gold; 
+select KDA from tds group by KDA order by KDA;
+select score from tds group by score order by score; 
+select MVP from tds group by MVP order by MVP; 
+select total_damage from tds group by total_damage order by total_damage; 
+select total_damege_percentage from tds group by total_damege_percentage order by total_damege_percentage; 
+select damage_to_champion from tds group by damage_to_champion order by damage_to_champion; 
+select damage_to_champion_percentage from tds group by damage_to_champion_percentage order by damage_to_champion_percentage; 
+select damage_taken from tds group by damage_taken order by damage_taken; 
+select damage_taken_percentage from tds group by damage_taken_percentage order by damage_taken_percentage; 
+select win_by_defult from tds group by win_by_defult order by win_by_defult;
