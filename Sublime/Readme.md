@@ -18,11 +18,11 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Introduction
     * Activate Multiple Selection Module
     * Tricks & Examples
-* [modify excel files](#modify-excel-files)
+* [Modify Excel Files](#modify-excel-files)
     * Copy & Paste
     * Some Tips
     * Edit Transverted XML Files
-* [Tricks & Plug-ins](#tricks_and_plug-ins)
+* [Tricks & Plug-ins](#tricks-&-plug-ins)
     * View Bar
     * Plug-ins
 
@@ -60,9 +60,9 @@ That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 Some tips: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
 
 > **Scenario2**  
-Xiaohong asked Xiaoming to do perform data analysis. 
+Xiaohong asked Xiaoming to perform data analysis. 
 
-## modify excel files
+
 
 --------------------------------
 [csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
