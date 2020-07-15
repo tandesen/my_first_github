@@ -1,0 +1,97 @@
+	USE [project_tandesen]
+
+	ALTER VIEW  [vw].[caiwenji_data_analysis] AS
+	SELECT		[nick_name],
+				[champion],
+				[position],
+				[game_type],
+				[date],
+				[total_time],
+				[gold],
+				[KDA],
+				[score],
+				[MVP],
+				[total_damage],
+				[total_damege_percentage],
+				[damage_to_champion],
+				[damage_to_champion_percentage],
+				[damage_taken],
+				[damage_taken_percentage],
+				[win_by_defult],
+				[RI01_01_hit],
+				[RI01_01_reason],
+				[RI01_02_hit],
+				[RI01_02_reason],
+				[RI01_03_hit],
+				[RI01_03_reason],
+				[RI02_01_hit],
+				[RI02_01_reason],
+				[RI02_02_hit],
+				[RI02_02_reason],
+				[RI02_03_hit],
+				[RI02_03_reason],
+				[RI03_01_01_hit],
+				[RI03_01_01_reason],
+				[RI03_01_02_hit],
+				[RI03_01_02_reason],
+				[RI03_02_01_hit],
+				[RI03_02_01_reason],
+				[RI03_02_02_hit],
+				[RI03_02_02_reason],
+				[RI04_01_hit],
+				[RI04_01_reason],
+				[RI04_02_hit],
+				[RI04_02_reason],
+				[RI04_03_hit],
+				[RI04_03_reason],
+				[RI04_04_hit],
+				[RI04_04_reason],
+				[RI04_05_hit],
+				[RI04_05_reason],
+				[RI05_01_hit],
+				[RI05_01_reason],
+				[RI05_02_01_hit],
+				[RI05_02_01_reason],
+				[RI05_02_02_hit],
+				[RI05_02_02_reason],
+				[RI05_03_01_hit],
+				[RI05_03_01_reason],
+				[RI05_03_02_hit],
+				[RI05_03_02_reason],
+				[RI05_04_hit],
+				[RI05_04_reason],
+				[RI05_05_hit],
+				[RI05_05_reason],
+				[RI05_06_hit],
+				[RI05_06_reason],
+				[RI05_07_01_hit],
+				[RI05_07_01_reason],
+				[RI05_07_02_hit],
+				[RI05_07_02_reason]
+	FROM		[cdm].[caiwenji_data_analysis]
+	;
+
+
+ -- Summary by KRIs
+
+	SELECT		N'RI01_01' AS [KRI_ref],
+				[EY_RI01_01_reason] AS [KRI_reason],
+				COUNT(1) AS [rcount],
+				SUM([total_damage]) AS [total_damage],
+				SUM([damage_taken]) AS [damage_taken]
+	FROM		[vw].[caiwenji_data_analysis]
+	WHERE		[RI01_01_hit] = 1	
+	GROUP BY	[RI01_01_reason]	
+
+	UNION ALL
+
+	SELECT		N'RI01_02' AS [KRI_ref],
+				[EY_RI01_02_reason] AS [KRI_reason],
+				COUNT(1) AS [rcount],
+				SUM([total_damage]) AS [total_damage],
+				SUM([damage_taken]) AS [damage_taken]
+	FROM		[vw].[caiwenji_data_analysis]
+	WHERE		[RI01_02_hit] = 1	
+	GROUP BY	[RI01_02_reason]	
+
+	UNION ALL
