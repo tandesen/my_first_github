@@ -18,7 +18,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Introduction
     * Activate Multiple Selection Module
     * Tricks & Examples
-* [Modify Excel Files](#modify_excel_files)
+* [modify excel files](#modify-excel-files)
     * Copy & Paste
     * Some Tips
     * Edit Transverted XML Files
@@ -62,7 +62,7 @@ Some tips: when you do copy and paste for multiple lines in sublime, make sure t
 > **Scenario2**  
 Xiaohong asked Xiaoming to do perform data analysis. 
 
-
+## modify excel files
 
 --------------------------------
 [csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
