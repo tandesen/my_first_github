@@ -5,7 +5,7 @@ I will briefly introduce several tricks I use for `sublime` in this file. In gen
 In this file, I will mainly introduce `sublime` as a text editor, and use it to write SQL codes and deal with excel files.
 
 ****
-	
+
 |Author|Tandesen|
 |---|---
 |EY_Profile|[![EY-profile]][homepage]
@@ -53,16 +53,34 @@ The client offered the header info in the `scenario1_header.txt` file. Xiaohong 
 That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 
 * Step1. Open the txt file with sublime.  
-* Step2. Select all text and press `CTRL + SHIFT + L`, then press `Left Arrow Button`, then press `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
+* Step2. Select all text and press `CTRL + SHIFT + L`, then press `LEFT ARROW BUTTON`, then press `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
 * Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
-* Step4. Type `Select` and `CTRL + V` and whatever you want!
+* Step4. Type `SELECT` and `CTRL + V` and whatever you want!
 
 Some tips: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
 
 > **Scenario2**  
-Xiaohong asked Xiaoming to perform data analysis. 
+Xiaohong asked Xiaoming to perform data analysis. Xiaohong had written part of the script as shown in `scenario2_source.txt`, and she wanted Xiaoming to generate the rest of the code as shown in `scenario2_result.txt`. Please note the tiny differences between these two text files. Generally speaking, we need to modify four parts(in first two lines and last two lines separately) among each `UNION ALL` section in `scenario2_source.txt` according to the `ALTER VIEW` section.  
 
+I will update gif file for this part(TBC.) cuz it is cumbersome to write these steps in words.
 
+> **Scenario3**  
+Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The result is:  
+
+```
+蔡文姬儿长
+蔡文姬关枪
+蔡文姬蛋饼
+蔡文姬器猫
+蔡文姬儿挺
+```
+
+And Xiaoming want to generate a SQL code like: `... WHERE IN (N'蔡文姬儿长',N'蔡文姬关枪',N'蔡文姬蛋饼',N'蔡文姬器猫',N'蔡文姬儿挺')`. While Excel can serve this, it might be quite disgusting. It's the time sublime comes into play!
+
+* Step1. Open the txt file with sublime.  
+* Step2. Perform the following key bindings in order: `CTRL + A`, `CTRL + SHIFT + L`, `'`, `LEFT ARROW BUTTON`, ``, `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
+* Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
+* Step4. Type `SELECT` and `CTRL + V` and whatever you want!
 
 --------------------------------
 [csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
