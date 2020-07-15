@@ -45,26 +45,23 @@ One can view/add key bindings in sublime by clicking `Preferences -> Key Binding
 
 I find the fifth way above powerful and the reason will show up in the coming section.
 ### Tricks & Examples
-Scenario1
-```
+
+> **Scenario1**  
 Xiaohong asked Xiaoming to do data qualification check. Especially, select and count every column, group by every column. 
 The client offered the header info in the `scenario1_header.txt` file. Xiaohong recommended Xiaoming to use excel to generate the SQL codes with the `text to column` function. 
-```
+
 That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 
-```
-Step1. Open the txt file with sublime.  
-Step2. Select all text and press `CTRL + SHIFT + L`, then press `Left Arrow Button`, then press `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
-Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
-Step4. Type `Select` and `CTRL + V` and whatever you want!
-```
+* Step1. Open the txt file with sublime.  
+* Step2. Select all text and press `CTRL + SHIFT + L`, then press `Left Arrow Button`, then press `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
+* Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
+* Step4. Type `Select` and `CTRL + V` and whatever you want!
 
 Some tips: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
 
-Scenario2
-```
+> **Scenario2**  
 Xiaohong asked Xiaoming to do perform data analysis. 
-```
+
 
 
 --------------------------------
