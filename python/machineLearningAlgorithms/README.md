@@ -1,1 +1,34 @@
+README
+===========================
+****
 
+|Author|Tandesen|
+|---|---
+|EY_Profile|[![EY-profile]][homepage]
+|Favorites|Potato and Ice-tea!
+|Contact|![Contact]
+----
+
+`Scikit-learn` is probably the most useful library for machine learning in python. The sklearn library contains a lot of efficient tools for machine learning and statistical modeling including `classification`, `regression`, `clustering` and `dimensionality reduction`.  
+
+For my position as a forensic data analyst, I found the [Outlier Detection Algorithms](https://scikit-learn.org/stable/modules/outlier_detection.html "Bazinga!") fairly useful. There are four algorithms contained in the link above for outlier detection. I.e., `Robust Covariance`, `One-Class SVM`, `Isolation Forest` and `Local Outlier Factor`. Let me introduce some related terminologies first and then briefly discuss the theories behind these algorithms as far as I am concerned.  
+
+__Some terminologies__  
+* ___Feature___: One may understand a feature as a column from the structured data. The formal definition from wikipedia is: `In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed.`  
+* ___Label___: Label is the output/result, is what people are attempting to predict or forecast. For example, in a J&E dataset, a label for one row can be either `legal` or `illegal`. Our original data are usually unlabeled. I.e., for a given row in the original data, we do not know whether it is legal or illegal, and we usually perform KRI analysis to detect illegal entries. Machine learning with unlabeled data is called unsupervised machine learning as the next terminology.
+* ___Unsupervised Machine Learning___: Definition from wikipedia: Unsupervised learning is a type of machine learning that looks for previously undetected patterns in a data set with no pre-existing labels and with a minimum of human supervision.
+
+One should realize that the outlier detection is usually an unsupervised learning. Thus typical clustering algorithms may serve, for example the `K-means Clustering` with k equals to 1. Since I haven't dived deeply into these clustering algorithms, let us leave them for the moment and come back to the four algorithms mentioned in the second paragraph.  
+
+Given n features chosen, one row of data denotes a point in the n-dimensional space. The main idea of these four algorithms is to separate points in the n-dimensional space which are `far away` from other points, while they differ in details.  
+
+* Robust Covariance: 
+* One-Class SVM: 
+* Isolation Forest: 
+* Local Outlier Factor: 
+
+
+--------------------------------
+[homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
+[EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
+[Contact]:https://img.shields.io/badge/Wechat-markts28-brightgreen "Add me beauties!"
