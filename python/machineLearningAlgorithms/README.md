@@ -18,7 +18,7 @@ __Some Terminologies__
 * ___Label___: Label is the output/result, is what people are attempting to predict or forecast. For example, in a J&E dataset, a label for one row can be either `legal` or `illegal`. Our original data are usually unlabeled. I.e., for a given row in the original data, we do not know whether it is legal or illegal, and we usually perform KRI analysis to detect illegal entries. Machine learning with unlabeled data is called unsupervised machine learning as the next terminology.
 * ___Unsupervised Machine Learning___: Definition from wikipedia: Unsupervised learning is a type of machine learning that looks for previously undetected patterns in a data set with no pre-existing labels and with a minimum of human supervision.
 
-One should realize that the outlier detection is usually an unsupervised learning. Thus typical clustering algorithms may serve, for example the `K-means Clustering` with k equals to 1. Since I haven't dived deeply into these clustering algorithms, let us leave them for the moment and come back to the four algorithms mentioned in the second paragraph.  
+One should realize that the outlier detection is usually an unsupervised learning. Thus typical clustering algorithms may serve, for example the `K-means Clustering` with k equals to 1. Since I haven't dived deeply into these clustering algorithms, let us leave them for the moment and go back to the four algorithms mentioned in the second paragraph.  
 
 Given n features chosen, one row of data denotes a point in the n-dimensional space. The main idea of these four algorithms is to separate points in the n-dimensional space which are `far away` from other points, while they differ in details.  
 
