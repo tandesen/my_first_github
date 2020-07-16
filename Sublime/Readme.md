@@ -100,7 +100,9 @@ Some tips you should know when dealing with plain text from excel files:
 
 ### Edit Transverted XML Files
 Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet. XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
-For our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven' find out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
+
+In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven' find out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
+
 Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formula, link or picture information. But I believe that this method works for plain text information contained in Excel.
 
 --------------------------------
