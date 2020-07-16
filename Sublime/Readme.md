@@ -89,11 +89,11 @@ One can modify excel files by programming. However, it is convenient to do that 
 Copy and paste content in excel files to sublime and cope with plain text. Please refer to `Excel_copy_&_paste.xlsx`. We want to creat tab `result` from tab `origin` with tab `reference`.  
 Some tips you should know when dealing with plain text from excel files:
 
-* 1.Line break issue can be quite annoying. If you have multile lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
+* Line break issue can be quite annoying. If you have multile lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
 
-* 2.When it comes to delimiter, please note that the `spaces` you see in sublime may not actually be the same. Typically, select spaces in sublime, `·` denotes `space` and `——` denotes `tab`.
+* When it comes to delimiter, please note that the `spaces` you see in sublime may not actually be the same. Typically, select spaces in sublime, `·` denotes `space` and `——` denotes `tab`.
 
-* 3.Copy and paste content with filter in Excel may cause troubles. Sometimes you wanna copy/paste content from/to visible/unvisible cells in excel but get different results. I was struggling with some of the issues and failed to find a perfect solution. Here are some links for you to refer:   
+* Copy and paste content with filter in Excel may cause troubles. Sometimes you wanna copy/paste content from/to visible/unvisible cells in excel but get different results. I was struggling with some of the issues and failed to find a perfect solution. Here are some links for you to refer:   
 [复制粘贴到筛选单元格里](http://club.excelhome.net/thread-861292-1-1.html "MarkMarkMark!")  
 [复制筛选后的内容](https://zhuanlan.zhihu.com/p/29831730 "ChinaChinaChina!!")  
 [复制粘贴筛选后的单元格](https://jingyan.baidu.com/article/b87fe19ec22a2312183568cf.html "DoingDoingDoing!!!")  
@@ -102,6 +102,7 @@ Some tips you should know when dealing with plain text from excel files:
 Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet. XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
 For our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven' find out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
 Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formula, link or picture information. But I believe that this method works for plain text information contained in Excel.
+
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
 [EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
