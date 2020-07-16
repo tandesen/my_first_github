@@ -13,7 +13,7 @@ README
 
 For my position as a forensic data analyst, I found the [Outlier Detection Algorithms](https://scikit-learn.org/stable/modules/outlier_detection.html "Bazinga!") fairly useful. There are four algorithms contained in the link above for outlier detection. I.e., `Robust Covariance`, `One-Class SVM`, `Isolation Forest` and `Local Outlier Factor`. Let me introduce some related terminologies first and then briefly discuss the theories behind these algorithms as far as I am concerned.  
 
-__Some terminologies__  
+__Some Terminologies__  
 * ___Feature___: One may understand a feature as a column from the structured data. The formal definition from wikipedia is: `In machine learning and pattern recognition, a feature is an individual measurable property or characteristic of a phenomenon being observed.`  
 * ___Label___: Label is the output/result, is what people are attempting to predict or forecast. For example, in a J&E dataset, a label for one row can be either `legal` or `illegal`. Our original data are usually unlabeled. I.e., for a given row in the original data, we do not know whether it is legal or illegal, and we usually perform KRI analysis to detect illegal entries. Machine learning with unlabeled data is called unsupervised machine learning as the next terminology.
 * ___Unsupervised Machine Learning___: Definition from wikipedia: Unsupervised learning is a type of machine learning that looks for previously undetected patterns in a data set with no pre-existing labels and with a minimum of human supervision.
