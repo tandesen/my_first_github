@@ -2,7 +2,7 @@ README
 ===========================
 I will briefly introduce several tricks I use for `sublime` in this file. In general, `sublime` is a text editor which is popular among programmers to write codes. `Sublime` is also powerful and fascinating by its conveniency and multiple plug-in modules and packages. I use `sublime` to code python from time to time. My friends love it because it is easy and fast to open and use.   
 
-In this file, I will mainly introduce `sublime` as a text editor, and use it to write SQL codes and deal with excel files.
+In this file, I will mainly introduce `sublime` as a text editor, and use it to write SQL codes as well as deal with excel files.
 
 ****
 
@@ -10,17 +10,18 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
 |---|---
 |EY_Profile|[![EY-profile]][homepage]
 |Favorites|Potato and Ice-tea!
+|Contact|![Contact]
 
 
 ****
 ## Content
 * [Multiple Selections](#multiple-selections)
     * Introduction
-    * Activate Multiple Selection Module
+    * Activate Multiple Selection Mode
     * Tricks & Examples
 * [Modify Excel Files](#modify-excel-files)
+    * Introduction
     * Copy & Paste
-    * Some Tips
     * Edit Transverted XML Files
 * [Tricks & Plug-ins](#tricks-&-plug-ins)
     * View Bar
@@ -31,7 +32,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
 ### Introduction
 We mainly discuss writing SQL codes here. It is common to write mutiple lines of SQL codes which differ by certain words. For example, when we do qualification check, we may write `select columnA from table`, `select columnB from table` and so on. People may use excel to generate such codes by putting word `select` in one column, column names in another column, and the rest of codes in one more column. This is a good way to write codes, but one may find it difficult to maintain such codes with excel. We will discuss these issues in detail in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
 
-Sublime(and many other text editors/IDEs) have a multiple selection mode in which we can have more than one item selected at the same time. In that mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode(I will upload gif figures later).
+Sublime(and many other text editors/IDEs) have a multiple selection mode in which we can have more than one item selected at the same time. In this mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode(I will upload gif figures later).
 ### Activate Multiple Selection Mode
 There are many ways to activate the multiple selection mode. One can search that online for more details. Ways I know are as following:
 ```
@@ -43,7 +44,7 @@ There are many ways to activate the multiple selection mode. One can search that
 ```
 One can view/add key bindings in sublime by clicking `Preferences -> Key Bindings` button and there are other ways to activate the mode.  
 
-I find the fifth way above powerful and the reason will show up in the coming section.
+I find the fifth way above super powerful and the reasons will show up in the coming section.
 ### Tricks & Examples
 
 > **Scenario1**  
@@ -75,19 +76,33 @@ Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The r
 蔡文姬儿挺
 ```
 
-And Xiaoming want to generate a SQL code like: `... WHERE IN (N'蔡文姬儿长',N'蔡文姬关枪',N'蔡文姬蛋饼',N'蔡文姬器猫',N'蔡文姬儿挺')`. While Excel can serve this, it might be quite disgusting. It's the time sublime comes into play!
+And Xiaoming want to generate a SQL code like: `... WHERE IN (N'蔡文姬儿长',N'蔡文姬关枪',N'蔡文姬蛋饼',N'蔡文姬器猫',N'蔡文姬儿挺')`. While Excel can serve this, it might be quite disgusting. It's when sublime comes into play!
 
-* Step1. Open the txt file with sublime.  
-* Step2. Perform the following key bindings in order: `CTRL + A`, `CTRL + SHIFT + L`, `'`, `LEFT ARROW BUTTON`, ``, `CTRL + SHIFT + RIGHT ARROW BUTTON` to select all column names. Copy column names with `CTRL + C`.
-* Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
-* Step4. Type `SELECT` and `CTRL + V` and whatever you want!
+* Step1. Open a new file in sublime and copy paste the result.  
+* Step2. Perform the following key bindings in order: `CTRL + A`, `CTRL + SHIFT + L`, `'`, `HOME`, `N`, `END`, `,`, `HOME`, `BACKSPACE`, `END`, `BACKSPACE`, `CTRL + A`, `(`. Note that Chinese input methods will cause problems!
 
+## Modify Excel Files
+------
+### Introduction
+One can modify excel files by programming. However, it is convenient to do that with a text editor like sublime sometimes. As far as I know, one way is to copy & paste content in excel into sublime as plain text, the other way is to convert excel file into XML file and modify it with sublime. We will introduce them in the next two sections.
+### Copy & Paste
+Copy and paste content in excel files to sublime and cope with plain text. Please refer to `Excel_copy_&_paste.xlsx`. We want to creat tab `result` from tab `origin` with tab `reference`.  
+Some tips you should know when dealing with plain text from excel files:
+
+* 1.Line break issue can be quite annoying. If you have multile lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
+
+* 2.When it comes to delimiter, please note that the `spaces` you see in sublime may not actually be the same. Typically, select spaces in sublime, `·` denotes `space` and `——` denotes `tab`.
+
+* 3.Copy and paste content with filter in Excel may cause troubles. Sometimes you wanna copy/paste content from/to visible/unvisible cells in excel but get different results. I was struggling with some of the issues and failed to find a perfect solution. Here are some links for you to refer:   
+[复制粘贴到筛选单元格里](http://club.excelhome.net/thread-861292-1-1.html "MarkMarkMark!")  
+[复制筛选后的内容](https://zhuanlan.zhihu.com/p/29831730 "ChinaChinaChina!!")  
+[复制粘贴筛选后的单元格](https://jingyan.baidu.com/article/b87fe19ec22a2312183568cf.html "DoingDoingDoing!!!")  
+
+### Edit Transverted XML Files
+Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet. XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
+For our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven' find out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
+Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formula, link or picture information. But I believe that this method works for plain text information contained in Excel.
 --------------------------------
-[csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
-[weibo]:http://weibo.com/linpiaochen
-[baidu-logo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
-[weibo-logo]:/img/weibo.png "点击图片进入我的微博"
-[csdn-logo]:/img/csdn.png "我的CSDN博客"
-[code-past]:/img/codepast-logo.jpg "公众号：编程往事"
 [EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
+[Contact]:https://img.shields.io/badge/Wechat-markts28-brightgreen "Add me beauties!"
