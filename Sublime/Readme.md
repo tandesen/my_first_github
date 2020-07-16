@@ -23,7 +23,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Introduction
     * Copy & Paste
     * Edit Transverted XML Files
-* [Settings & Plugins](#settings-&-plugins)
+* [Settings & Plugins](#settings&plugins)
     * Settings
     * Plugins
 
