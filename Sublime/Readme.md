@@ -32,7 +32,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
 ### Introduction
 We mainly discuss writing SQL codes here. It is common to write multiple lines of SQL codes which differ by certain words. For example, when we do qualification check, we may write `select columnA from table group by columnA`, `select columnB from table group by columnB` and so on. People may use Excel to generate such codes by putting word `select` in one column, column names in another column and so on. This is a good way to write codes, but one may find it difficult to maintain such codes with Excel. We will discuss these issues in detail in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
 
-Sublime and many other text editors/IDEs have a multiple selection mode in which we can have more than one item selected at the same time. In this mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode<font color = red>(I will upload gif figures later)</font>.
+Sublime and many other text editors/IDEs have a multiple selection mode in which we can have more than one item selected at the same time. In this mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode<font color=red>(I will upload gif figures later)</font>.
 ### Activate Multiple Selection Mode
 There are many ways to activate the multiple selection mode. One can search that online for more details. Ways I know are as following:
 ```
