@@ -91,7 +91,6 @@ Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The r
 * Step2. Perform the following key bindings in order: `CTRL + A`, `CTRL + SHIFT + L`, `'`, `HOME`, `N`, `END`, `,`, `HOME`, `BACKSPACE`, `END`, `BACKSPACE`, `CTRL + A`, `(`. Note that Chinese input methods will cause problems!
 
 ## Modify Excel Files
-------
 ### Introduction
 One can modify excel files by programming. However, it is convenient to do that with a text editor like sublime sometimes. As far as I know, one way is to copy & paste content in excel into sublime as plain text, the other way is to convert excel file into XML file and modify it with sublime. We will introduce these two methods in the next two sections.
 ### Copy & Paste
@@ -116,7 +115,6 @@ In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and op
 Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formula, link or picture information. But I believe that this method works for plain text information contained in Excel.
 
 ## Settings & Plugins
-------
 ### Settings
 Maybe we should introduce this part in the very beginning of this file. Anyway, I do recommend that you explore tool bars when you install a new software, especially for key bindings. I found some functions pretty useful in the tool bars of sublime:  
 * `View -> Syntax`: Choose the syntax and enjoy the wonderful format & color!
@@ -132,7 +130,6 @@ Download the following packages via the last bullet in `Settings` section. After
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
 
 ## References
-------
 (1): [https://en.wikipedia.org/wiki/XML](https://en.wikipedia.org/wiki/XML)
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
