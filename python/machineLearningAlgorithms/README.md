@@ -27,7 +27,9 @@ Given n features chosen, one row of data denotes a point in the n-dimensional sp
 * Isolation Forest: 
 * Local Outlier Factor: 
 ----
-## [1]:http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/
+## References
+### \[1\]:[http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/]:http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/
+
 
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
