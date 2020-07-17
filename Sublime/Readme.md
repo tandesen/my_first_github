@@ -110,14 +110,14 @@ Some tips you should know when dealing with plain text from excel files:
 Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet [\[1\]](#references). 
 XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
 
-In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven't found out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="`:grey_question::octocat::trollface::shipit:`">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
+In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven't found out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="`:grey_question::octocat::trollface::shipit:`">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel and save it back to `*.xlsx` format.  
 
-Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formula, link or picture information. But I believe that this method works for plain text information contained in Excel.
+Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formulas, links or pictures information. But I believe that this method works for plain text information contained in Excel.
 
 ## Settings & Plugins
 ### Settings
-Maybe we should introduce this part in the very beginning of this file. Anyway, I do recommend that you explore tool bars when you install a new software, especially for key bindings. I found some functions pretty useful in the tool bars of sublime:  
-* `View -> Syntax`: Choose the syntax and enjoy the wonderful format & color!
+Maybe we should introduce this part in the very beginning of this file. Anyway, I do recommend that you should explore tool bars when you install a new software, especially for key bindings. I found some functions pretty useful in the tool bars of sublime:  
+* `View -> Syntax`: Choose the syntax and view the wonderful format & color!
 * `View -> Layout`: Pretty useful when you deal with multiple files at the same time.
 * `View -> Spell Check`: Say no more! Always useful.
 * `View -> Word Wrap`: Can be tricky when combined with multiple selection mode. Be careful!
@@ -126,7 +126,7 @@ Maybe we should introduce this part in the very beginning of this file. Anyway, 
 * `Preferences -> Package Control : Install Package`: Where we download packages(plugins)!
 
 ### Plugins
-Download the following packages via the last bullet in `Settings` section. After doing so, follow the command after colon and explore more!
+Download the following packages via the last bullet in the `Settings` section. After doing so, follow the command after colon and explore more!
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
 
 ## References
