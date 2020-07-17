@@ -130,7 +130,7 @@ Download the following packages via the last bullet in `Settings` section. After
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
 
 ## References
-(1): [https://en.wikipedia.org/wiki/XML](https://en.wikipedia.org/wiki/XML)
+### (1): [https://en.wikipedia.org/wiki/XML](https://en.wikipedia.org/wiki/XML)
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
 [EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
