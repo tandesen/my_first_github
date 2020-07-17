@@ -73,7 +73,7 @@ That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 > **Scenario2**  
 Xiaohong asked Xiaoming to perform data analysis. Xiaohong had written part of the script as shown in `scenario2_source.txt`, and she wanted Xiaoming to generate the rest of the code as shown in `scenario2_result.txt`. Please note the tiny differences between these two text files. Generally speaking, we need to modify four parts(in the first two lines and last two lines separately) among each `UNION ALL` section in `scenario2_source.txt` according to the `ALTER VIEW` section.  
 
-I will update gif file for this part(TBC.) cuz it is cumbersome to write these steps in words.
+I will update gif files for this part(TBC.) cuz it is cumbersome to write these steps in words.
 
 > **Scenario3**  
 Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The result is:  
