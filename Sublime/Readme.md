@@ -94,7 +94,7 @@ Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The r
 ## Modify Excel Files
 ------
 ### Introduction
-One can modify excel files by programming. However, it is convenient to do that with a text editor like sublime sometimes. As far as I know, one way is to copy & paste content in excel into sublime as plain text, the other way is to convert excel file into XML file and modify it with sublime. We will introduce them in the next two sections.
+One can modify excel files by programming. However, it is convenient to do that with a text editor like sublime sometimes. As far as I know, one way is to copy & paste content in excel into sublime as plain text, the other way is to convert excel file into XML file and modify it with sublime. We will introduce these two methods in the next two sections.
 ### Copy & Paste
 Copy and paste content in excel files to sublime and cope with plain text. Please refer to `Excel_copy_&_paste.xlsx`. We want to create tab `result` from tab `origin` with tab `reference`.  
 Some tips you should know when dealing with plain text from excel files:
