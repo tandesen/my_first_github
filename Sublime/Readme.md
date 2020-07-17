@@ -132,8 +132,9 @@ Maybe we should introduce this part in the very beginning of this file. Anyway, 
 ### Plugins
 Download the following packages via the last bullet in `Settings` section. After doing so, follow the command after colon and explore more!
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
---------------------------------
+------
 [[1]]:https://en.wikipedia.org/wiki/XML
+--------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
 [EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
 [Contact]:https://img.shields.io/badge/Wechat-markts28-brightgreen "Add me beauties!"
