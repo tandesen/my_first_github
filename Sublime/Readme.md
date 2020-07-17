@@ -35,7 +35,7 @@ We mainly discuss writing SQL codes here. It is common to write multiple lines o
 Sublime and many other text editors/IDEs have a multiple selection mode in which we can have more than one item selected at the same time. In this mode, we can generate and maintain SQL codes in a fairly convenient way. In the following section, we gonna introduce how to activate the multiple selection mode
 **(I will upload gif figures later)**.
 ### Activate Multiple Selection Mode
-There are many ways to activate the multiple selection mode. One can search that online for more details. Ways I know are as following:
+There are many ways to activate the multiple selection mode. Ways I know are as following:
 ```
 1.Hold `CTRL` and left click on different places.
 2.Click on `SHIFT + RIGHT MOUSE BUTTON`, then scroll down/up.
