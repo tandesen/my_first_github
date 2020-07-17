@@ -46,7 +46,7 @@ There are many ways to activate the multiple selection mode. Ways I know are as 
 One can view/add key bindings in sublime by clicking `Preferences -> Key Bindings` buttons. I find the fifth way above super powerful and the reasons will show up in the coming section.
 ### Tricks & Examples
 
-It is always helpful to use shortcut keys. Except for key bindings in sublime(refer to `Preferences -> Key Bindings`), one should also be familiar with the following shortcut keys, which can also be used in many other places other than sublime:
+It is always helpful to use shortcut keys. Except for key bindings in sublime, one should also be familiar with the following shortcut keys, which can also be used in many other softwares other than sublime:
 ```
 1.`CTRL + RIGHT/LEFT ARROW`: Move cursor over words or delimiters in English and phrases in Chinese.
 2.`CTRL + SHIFT + RIGHT/LEFT ARROW`: Move and select over words or phrases.
@@ -55,7 +55,7 @@ It is always helpful to use shortcut keys. Except for key bindings in sublime(re
 5.`SHIFT` plus shortcut keys in 3 and 4: Move and select.
 ```
 
-Now let us see some examples where we can apply everything we acquired so far.
+Now let us see some examples where we can apply everything we have acquired so far.
 
 > **Scenario1**  
 Xiaohong asked Xiaoming to do data qualification check. Especially, select and count every column, group by every column. 
