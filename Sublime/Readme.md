@@ -99,7 +99,7 @@ One can modify excel files by programming. However, it is convenient to do that 
 Copy and paste content in excel files to sublime and cope with plain text. Please refer to `Excel_copy_&_paste.xlsx`. We want to create tab `result` from tab `origin` with tab `reference`.  
 Some tips you should know when dealing with plain text from excel files:
 
-* Line break issue could be quite annoying. If you have multiple lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
+* Line break issue could be quite annoying. If you have multiple lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function in Excel occasionally to make sure which delimiter is being used.
 
 * When it comes to delimiter, please note that the `spaces` you see in sublime may not actually be the same. Typically, select spaces in sublime, `·` denotes `space` and `——` denotes `tab`.
 
@@ -109,7 +109,7 @@ Some tips you should know when dealing with plain text from excel files:
 [复制粘贴筛选后的单元格](https://jingyan.baidu.com/article/b87fe19ec22a2312183568cf.html "DoingDoingDoing!!!")  
 
 ### Edit Transverted XML Files
-Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet. XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
+Extensible Markup Language (XML) is a markup language, the design goals of XML emphasize simplicity, generality, and usability across the Internet[1]. XML files can be opened in different operating systems and versions of softwares without conflicts, which makes it popular.  
 
 In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and open it with sublime(`XML Data(*.XML)` format doesn't work and I haven' find out the reason). There are abundant information contained in the XML file for you to explore such as the format of Excel file and tab names. Now just perform your favorite tricks in multiple selection mode! For example, if you wanna modify all tab names in the meantime you can select and find all markups `<Worksheet ss:Name="">` and type or paste sheetnames you have in mind. Finally, just open the XML file with Excel after editing and save it back to `*.xlsx` format.  
 
