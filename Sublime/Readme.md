@@ -68,7 +68,7 @@ That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 * Step3. Open a new sublime file and enter multiple selection mode, select n lines in the meantime where n is the number of columns.
 * Step4. Type `SELECT` and `CTRL + V` and whatever you want!
 
-Some tips: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
+**Tips**: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
 
 > **Scenario2**  
 Xiaohong asked Xiaoming to perform data analysis. Xiaohong had written part of the script as shown in `scenario2_source.txt`, and she wanted Xiaoming to generate the rest of the code as shown in `scenario2_result.txt`. Please note the tiny differences between these two text files. Generally speaking, we need to modify four parts(in first two lines and last two lines separately) among each `UNION ALL` section in `scenario2_source.txt` according to the `ALTER VIEW` section.  
