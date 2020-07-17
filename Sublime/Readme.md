@@ -43,9 +43,7 @@ There are many ways to activate the multiple selection mode. Ways I know are as 
 4.Select text fields you wanna edit and press `CTRL + SHIFT + L`.
 5.For items/words selected, press `CTRL + F` and then `ALT + ENTER`.
 ```
-One can view/add key bindings in sublime by clicking `Preferences -> Key Bindings` button and there are other ways to activate the mode.  
-
-I find the fifth way above super powerful and the reasons will show up in the coming section.
+One can view/add key bindings in sublime by clicking `Preferences -> Key Bindings` buttons. I find the fifth way above super powerful and the reasons will show up in the coming section.
 ### Tricks & Examples
 
 It is always helpful to use shortcut keys. Except for key bindings in sublime(refer to `Preferences -> Key Bindings`), one should also be familiar with the following shortcut keys, which can also be used in many other places other than sublime:
