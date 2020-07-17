@@ -28,7 +28,6 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Plugins
 
 ## Multiple Selections
-------
 ### Introduction
 We mainly discuss writing SQL codes here. It is common to write multiple lines of SQL codes which differ by certain words. For example, when we do qualification check, we may write `select columnA from table group by columnA`, `select columnB from table group by columnB` and so on. People may use Excel to generate such codes by putting word `select` in one column, column names in another column and so on. This is a good way to write codes, but one may find it difficult to maintain such codes with Excel. We will discuss these issues in detail in section `Tricks & Examples`, and for that reason we need a text editor like sublime.  
 
