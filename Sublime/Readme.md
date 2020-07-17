@@ -99,7 +99,7 @@ One can modify excel files by programming. However, it is convenient to do that 
 Copy and paste content in excel files to sublime and cope with plain text. Please refer to `Excel_copy_&_paste.xlsx`. We want to create tab `result` from tab `origin` with tab `reference`.  
 Some tips you should know when dealing with plain text from excel files:
 
-* Line break issue can be quite annoying. If you have multiple lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
+* Line break issue could be quite annoying. If you have multiple lines and want to put them in one cell in Excel, please use `"` to wrap these lines. It might also be helpful for you to check `column to text` function occasionally to make sure which delimiter is under used.
 
 * When it comes to delimiter, please note that the `spaces` you see in sublime may not actually be the same. Typically, select spaces in sublime, `·` denotes `space` and `——` denotes `tab`.
 
