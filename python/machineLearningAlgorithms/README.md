@@ -28,7 +28,7 @@ Given n features chosen, one row of data denotes a point in the n-dimensional sp
 * Local Outlier Factor: 
 ----
 ## References
-### \[1\]:[http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/]:(http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/)
+### \[1\]:[http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/ ]:(http://rvlasveld.github.io/blog/2013/07/12/introduction-to-one-class-support-vector-machines/ )
 
 
 --------------------------------
