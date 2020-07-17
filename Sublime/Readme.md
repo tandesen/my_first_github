@@ -71,7 +71,7 @@ That's a pretty nice way, but let us see how Xiaoming did it with sublime.
 **Tips**: when you do copy and paste for multiple lines in sublime, make sure that the line numbers from copy and paste source/destination coincide or you will get cartesian product.
 
 > **Scenario2**  
-Xiaohong asked Xiaoming to perform data analysis. Xiaohong had written part of the script as shown in `scenario2_source.txt`, and she wanted Xiaoming to generate the rest of the code as shown in `scenario2_result.txt`. Please note the tiny differences between these two text files. Generally speaking, we need to modify four parts(in first two lines and last two lines separately) among each `UNION ALL` section in `scenario2_source.txt` according to the `ALTER VIEW` section.  
+Xiaohong asked Xiaoming to perform data analysis. Xiaohong had written part of the script as shown in `scenario2_source.txt`, and she wanted Xiaoming to generate the rest of the code as shown in `scenario2_result.txt`. Please note the tiny differences between these two text files. Generally speaking, we need to modify four parts(in the first two lines and last two lines separately) among each `UNION ALL` section in `scenario2_source.txt` according to the `ALTER VIEW` section.  
 
 I will update gif file for this part(TBC.) cuz it is cumbersome to write these steps in words.
 
