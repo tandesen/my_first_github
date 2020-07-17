@@ -129,7 +129,7 @@ Maybe we should introduce this part in the very beginning of this file. Anyway, 
 * `Preferences -> Package Control : Install Package`: Where we download packages(plugins)!
 
 ### Plugins
-Download the following packages via the last bullet in `Settings` section. After doing so, follow command after colon and explore more!
+Download the following packages via the last bullet in `Settings` section. After doing so, follow the command after colon and explore more!
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
