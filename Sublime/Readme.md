@@ -86,7 +86,7 @@ Xiaoming got some results and wanted to put them in the `WHERE IN` clause. The r
 蔡文姬儿挺
 ```
 
-And Xiaoming want to generate a SQL code like: `... WHERE IN (N'蔡文姬儿长',N'蔡文姬关枪',N'蔡文姬蛋饼',N'蔡文姬器猫',N'蔡文姬儿挺')`. While Excel can serve this, it might be quite disgusting. It's when sublime comes into play!
+> And Xiaoming want to generate a SQL code like: `... WHERE IN (N'蔡文姬儿长',N'蔡文姬关枪',N'蔡文姬蛋饼',N'蔡文姬器猫',N'蔡文姬儿挺')`. While Excel can serve this, it might be quite disgusting. It's when sublime comes into play!
 
 * Step1. Open a new file in sublime and copy paste the result.  
 * Step2. Perform the following key bindings in order: `CTRL + A`, `CTRL + SHIFT + L`, `'`, `HOME`, `N`, `END`, `,`, `HOME`, `BACKSPACE`, `END`, `BACKSPACE`, `CTRL + A`, `(`. Note that Chinese input methods will cause problems!
