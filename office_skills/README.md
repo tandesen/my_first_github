@@ -26,7 +26,7 @@ In this file, we mainly discuss how to use Microsoft cmd command line codes to h
 * `COPY + ' ' + filepath1\filename1 + ' ' + filepath2\filename2` : Copy filename1 to filename2.
 * `move + ' ' + filepath1\filename1 + ' ' + filepath2\filename2` : Move filename1 to filename2.  
 
-Just explore more by Google search or Baidu search! Particularly, [this link](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) may help.
+Just explore more by Google search or Baidu search! [This link](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) may help as well.
 
 ___Note:___ Please DO use a text editor such as sublime to generate multiple lines of codes which makes your life much easier. You may wanna refer to the sublime folder for more information. **(Upload gif figures for renaming multiple files names in the meantime)**
 
