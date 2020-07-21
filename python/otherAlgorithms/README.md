@@ -13,7 +13,7 @@ Except for machine learning algorithms introduced in another folder, there are s
 
 ****
 ## Introduction
-The best known anecdote about the association rule is probably the [`Beer and Diapers Story`](https://jborden.com/2018/12/07/beer-and-diapers-the-perfect-couple/). Wal-Mart used data mining to discover that young American males who bought diapers (nappies) also had a predisposition to buy beer. They moved the beer display closer to the diaper play and increased revenue.  
+The best known anecdote about the association rule is probably the [Beer and Diapers Story](https://jborden.com/2018/12/07/beer-and-diapers-the-perfect-couple/). Wal-Mart used data mining to discover that young American males who bought diapers (nappies) also had a predisposition to buy beer. They moved the beer display closer to the diaper play and increased revenue.  
 We begin with some definitions. Suppose that our data contains customers and goods they buy which is illustrated as following:  
 
 ![小精灵吞掉了图片！](association_rule.PNG)  
