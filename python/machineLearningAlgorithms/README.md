@@ -27,7 +27,7 @@ Given n features chosen, one row of data denotes a point in the n-dimensional sp
 * ___Local Outlier Factor___: This algorithm is also widely used. For a given point A, LOF algorithm computes the local density of point A as well as the average of its k-near points' local densities. Computing the ratio of local density of point A and of its k-near points', we assign a score(called local outlier factor) to each point which reflects its soleness. Please refer to [this link](https://scikit-learn.org/stable/modules/outlier_detection.html#local-outlier-factor) for more details.  
 
 I will upload python codes for these algorithms using data provided in the root/data file. Please refer to notes in python codes and use `Jupyter Notebook` to open `.ipynb` files. Finally let us see the following illustrations from sklearn of the four algorithms introduced above.  
-![小精灵吃掉了图片！](sphx_glr_plot_anomaly_comparison_0011.png "Search on sklearn website for more info!")
+![小精灵吃掉了图片！](sphx_glr_plot_anomaly_comparison_0011.png "Search sklearn website for more info!")
 
 
 ----
