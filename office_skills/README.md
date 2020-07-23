@@ -1,6 +1,6 @@
 README
 ===========================
-In this file, we mainly discuss how to use Microsoft cmd command line codes to help our office work. I may introduce other ways in this section when I learn more.
+In this file, we mainly discuss how to use Microsoft cmd command line codes to help our office work. I may introduce other ways in this section as I learn more.
 
 ****
 
