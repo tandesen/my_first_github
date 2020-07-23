@@ -26,7 +26,9 @@ Given n features chosen, one row of data denotes a point in the n-dimensional sp
 * ___Isolation Forest___: This algorithm is much more reasonable and used in most cases. For every point(say A) in our n-dimensional space, we find a hyperplane which is orthogonal to a random axis to split the space into two parts, and for the part containing the point A, we find another hyperplane based on the same rule. We continue this progress until the point A is isolated in one hand of the n-th hyperplane, i.e., point A is the sole point 'wraped' by n hyperplanes. Then the smaller n is, the more likely point A is an outlier. In practice, we do several such progresses for each point and we can describe one progress as a [tree structure](https://en.wikipedia.org/wiki/Decision_tree#Overview). The 'depth' of a tree illustrates the soleness of the point and the 'depths' of all trees illustrate the overall soleness of the point(much more issues here: how many trees to choose, maximal depth of one tree, how to 'integrate' the 'depths' of all trees, etc.)
 * ___Local Outlier Factor___: This algorithm is also widely used. For a given point A, LOF algorithm computes the local density of point A as well as the average of its k-near points' local densities. Computing the ratio of local density of point A and of its k-near points', we assign a score(called local outlier factor) to each point which reflects its soleness. Please refer to [this link](https://scikit-learn.org/stable/modules/outlier_detection.html#local-outlier-factor) for more details.  
 
-I will upload python codes for these algorithms using data provided in the root/data file. Please refer to notes in python codes and use `Jupyter Notebook` to open `.ipynb` files.
+I will upload python codes for these algorithms using data provided in the root/data file. Please refer to notes in python codes and use `Jupyter Notebook` to open `.ipynb` files. Finally let us see the following illustrations from sklearn of the four algorithms introduced above.  
+![小精灵吃掉了图片！](sphx_glr_plot_anomaly_comparison_0011.png "Search on sklearn website for more info!")
+
 
 ----
 ## References
