@@ -26,6 +26,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
 * [Others](#others)
     * Settings
     * Plugins
+    * Regular Expression
 
 ## Multiple Selections
 ### Introduction
