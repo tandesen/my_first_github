@@ -24,8 +24,8 @@ When it comes to the association rule with two items A and B, the first thing sh
 |#|definition|formula|
 |---|---|----
 |1|Support|![support](support.png "Christina")
-|2|Confidence|![confidence][confidence.png "Everyone is ChenO"]
-|3|Lift|![lift][lift.png "Dawn"]
+|2|Confidence|![confidence](confidence.png "Everyone is ChenO")
+|3|Lift|![lift](lift.png "Dawn")
 
 
 * [Multiple Selections](#multiple-selections)
