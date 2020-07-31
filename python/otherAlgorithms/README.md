@@ -30,6 +30,8 @@ One can also refer to [link1](https://blog.csdn.net/reshuibing/article/details/8
 
 For my position as a forensic data analyst, I normally mine the association rules between two features(or columns) and find out data with huge money entry which obey the rules. I consider this algorithm useful because it deals with non-number data which is hard to cope with by using machine learning algorithms introduced in the other folder(one can also convert non-number data into 0-1 matrix and apply machine learning algorithms to it, but the matrix might be rather sparse and dimension reduction operations might be needed).
 
+For the result got with python, one should know that 'Lift represents the correlation between A and B. For lift > 1, the higher the lift is, the stronger the positive correlation is(positive correlation means that increasing A tends to increase B). For lift < 1, the lower the lift is, the stronger the negative correlation is(negative correlation means that increasing A tends to decrease B).'
+
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
 [EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
