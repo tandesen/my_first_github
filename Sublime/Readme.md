@@ -132,7 +132,7 @@ Download the following packages via the last bullet in the `Settings` section. A
 
 ### Regular Expression
 Sublime Text uses [Boost](https://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) [syntax](https://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html) for regular expression. Note that by pressing `CTRL + F` and clicking on button circled in blue in the following figure, you entered Sublime regular expression search mode.  
-![Sublime天下第一！]()
+![Sublime天下第一！](regular_expression.PNG)
 Please also refer to this
 
 ## References
