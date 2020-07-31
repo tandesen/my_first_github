@@ -21,8 +21,22 @@ I wanna discuss two things here, the first one is the issue in the bracket in th
 1. `ratio` & `partial_ratio`
 ```Python
 from fuzzywuzzy import fuzz
-fuzz.ratio('')
-```
+fuzz.ratio('齐齐哈尔市甘南县甘南镇富裕村大兴屯路南','甘南镇富裕村大兴屯路南')
+Out[1]: 73
+fuzz.partial_ratio('齐齐哈尔市甘南县甘南镇富裕村大兴屯路南','甘南镇富裕村大兴屯路南')
+Out[2]: 100
+```  
+In some project I do fuzzy match between places. I should use `partial_ratio` instead of `ratio` in this project.
+
+2. Data preprocessing
+```Python
+from fuzzywuzzy import fuzz
+fuzz.ratio('冰水有限公司','切尔西有限公司')
+Out[3]: 62
+fuzz.ratio('冰水','切尔西')
+Out[4]: 0
+```  
+In some project I do fuzzy match between companies. [I should clean data and cut `有限公司` in the origional data.](https://zhuanlan.zhihu.com/p/32929522) 
 
 --------------------------------
 [homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
