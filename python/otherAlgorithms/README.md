@@ -19,7 +19,7 @@ We begin with some definitions. Suppose that our data contains customers and goo
 ![小精灵吞掉了图片！](association_rule.PNG)  
 
 
-When it comes to the association rule, the first thing shows up in one's mind may be calculating the 
+When it comes to the association rule with two items A and B, the first thing shows up in one's mind might be calculating the times 
 
 * [Multiple Selections](#multiple-selections)
     * Introduction
