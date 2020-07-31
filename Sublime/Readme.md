@@ -23,7 +23,7 @@ In this file, I will mainly introduce `sublime` as a text editor, and use it to 
     * Introduction
     * Copy & Paste
     * Edit Transverted XML Files
-* [Settings & Plugins](#settings--plugins)
+* [Others](#others)
     * Settings
     * Plugins
 
@@ -114,7 +114,7 @@ In our case, save your excel file in `XML Spreadsheet 2003(*.XML)` format and op
 
 Be careful:bell:! I haven't carefully checked whether we will lose information by saving Excel in XML format, especially for formulas, links or pictures information. But I believe that this method works for plain text information contained in Excel.
 
-## Settings & Plugins
+## Others
 ### Settings
 Maybe we should introduce this part in the very beginning of this file. Anyway, I do recommend that you should explore tool bars when you install a new software, especially for key bindings. I found some functions pretty useful in the tool bars of sublime:  
 * `View -> Syntax`: Choose the syntax and view the wonderful format & color!
@@ -128,6 +128,11 @@ Maybe we should introduce this part in the very beginning of this file. Anyway, 
 ### Plugins
 Download the following packages via the last bullet in the `Settings` section. After doing so, follow the command after colon and explore more!
 * `SqlBeautifier`: Select your SQL codes and press `CTRL + K`, `CTRL + F` to format your SQL codes.
+
+### Regular Expression
+Sublime Text uses [Boost](https://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/syntax/perl_syntax.html) [syntax](https://www.boost.org/doc/libs/1_44_0/libs/regex/doc/html/boost_regex/format/perl_format.html) for regular expression. Note that by pressing `CTRL + F` and clicking on button circled in blue in the following figure, you entered Sublime regular expression search mode.  
+![Sublime天下第一！]()
+Please also refer to this
 
 ## References
 ### \[1\]: [https://en.wikipedia.org/wiki/XML](https://en.wikipedia.org/wiki/XML)
