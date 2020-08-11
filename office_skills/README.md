@@ -14,7 +14,8 @@ In this file, we mainly discuss how to use Microsoft cmd command line codes to h
 ****
 ## Ways to Open CMD Command Line
 * `WIN + R` and type `cmd` and hit `ENTER`.
-* Open a file folder and type `%comspec%`, this way you go directly to the folder path by default.
+* Open a file folder and type `%comspec%`, this way you go directly to the folder path by default.  
+![98年我玩不过她](comspec.png)
 
 ## Basic CMD Commands
 * `cd + filepath`: Enter that file path location.
