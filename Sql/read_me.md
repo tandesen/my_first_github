@@ -17,3 +17,18 @@ README
 ```
 [1][窗口函数](https://zhuanlan.zhihu.com/p/92654574)
 [2][排序函数们](https://www.sqlshack.com/overview-of-sql-rank-functions/)
+
+## SQL语句的书写顺序与执行顺序  
+网上有很多资料，[如这个](https://zhuanlan.zhihu.com/p/77847158)。  
+```
+(8) SELECT (9)DISTINCT<Select_list>
+(1) FROM <left_table> (3) <join_type>JOIN<right_table>
+(2) ON<join_condition>
+(4) WHERE<where_condition>
+(5) GROUP BY<group_by_list>
+(6) WITH {CUBE|ROLLUP}
+(7) HAVING<having_condtion>
+(10) ORDER BY<order_by_list>
+(11) LIMIT<limit_number>
+```
+理解这个事情很重要，可以明白一些编码时的问题，如我在`SELECT`语句里面给Column编辑了别名，在下面的`WHERE`语句中不能用这个别名，但在`ORDER BY`中就可以用这个别名，因为语句执行顺序问题。
