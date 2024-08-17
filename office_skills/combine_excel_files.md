@@ -30,7 +30,7 @@
     <img title="a title" alt="Alt text" src="images/1.png">
  2. **在最上面的地址栏输入 `%comspec%` 调出 CMD 命令行。这个代码相当于打开了 CMD 命令行并进入了当前文件夹地址。**
     <img title="a title" alt="Alt text" src="images/2.png">  
- 3. **在 CMD 命令行中输入代码 `copy *.csv combined.csv`，敲击回车。代码意思是将文件夹中所有的 `.csv` 文件合并成一个叫做 `combined.csv` 的文件。代码中 `combined.csv` 部分可自行修改。**
+ 3. **在 CMD 命令行中输入代码 `copy *.csv combined.csv`，敲击回车。代码意思是将文件夹中所有的 `.csv` 文件合并成一个叫做 `combined.csv` 的文件。代码中 `combined.csv` 文件名部分可自行修改。**
     <img title="a title" alt="Alt text" src="images/3.png">  
  4. **文件夹中会出现一个叫做 `combined.csv` 的文件。**
     <img title="a title" alt="Alt text" src="images/4.png">
