@@ -1,41 +1,100 @@
-README
-===========================
-In this file, we mainly discuss how to use Microsoft cmd command line codes to help our office work. I may introduce other ways in this section as I learn more.
+<h1 align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/tandesen/AB_Test/main/pictures/tattoo2.jfif" alt="Markdownify" width="280"></a>
+  <br>
+  T.S.
+  <br>
+</h1>
 
+<h3 align="center">合并 EXCEL 文件</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/小红书-德森大老爷-red"
+         alt="Gitter">
+  <a>
+	  <img src="https://img.shields.io/badge/B站-德森大老爷-purple">
+  </a>
+  <a>
+      <img src="https://img.shields.io/badge/github-tandesen-green">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#楔子">楔子</a> •
+  <a href="#理论解释">理论解释</a> •
+  <a href="#辛普森悖论">辛普森悖论</a> •
+  <a href="#进一步理解与应对方法">进一步理解与应对方法</a>
+</p>
+
+### 前提假设
+有多张 EXCEL 表格，它们的结构是一样的，即列的名字与顺序是一样的。
+
+
+## 方法一：使用命令行 CMD
+
+ 1. 将 EXCEL 文件们调整格式为 `.csv` 文件，并放在同一个本地文件夹中。
+    <img title="a title" alt="Alt text" src="images/1.png">
+ 2. 在最上面的地址栏输入 `%comspec%` 调出 CMD 命令行。这个代码相当于打开了 CMD 命令行并进入了当前文件夹地址。
+    <img title="a title" alt="Alt text" src="images/2.png">  
+ 3. 在 CMD 命令行中输入代码 `copy *.csv combined.csv`，敲击回车。代码意思是将文件夹中所有的 `.csv` 文件合并成一个叫做 `combined.csv` 的文件。代码中 `combined.csv` 部分可自行修改。
+    <img title="a title" alt="Alt text" src="images/3.png">  
+ 4. 文件夹中会出现一个叫做 `combined.csv` 的文件。
+    <img title="a title" alt="Alt text" src="images/4.png">
+ 5. 打开合并好的文件并删除重复的表头的行。因为 `.csv` 文件为文本文件，可用记事本打开，这个操作即将所有文本连接在了一起，所以表头也会重复出现。
+    <img title="a title" alt="Alt text" src="images/5.png">
+
+
+## 方法一的优缺点
+
+ 1. **优点**
+    * 速度超级快，对比使用 `Excel Power Query` 速度快很多。
+    * 操作简单，不容易报错。
+ 2. **缺点**
+    * 只对 `.csv` 文件有效，可能需要手动调整文件格式。
+    * 需要注意各个表的表头顺序，最后要手动删除重复出现的表头。
+
+
+## 方法二：Power Query -- Excel 21 世纪最大的福音！
+
+ 1. 将 EXCEL 文件们放在同一个文件夹中 (支持文件格式为 `.xlsx` 或 `.xlsb` 等)，并确保他们的 sheet 名字都是一样的，比如都叫 `Sheet1`。
+    <img title="a title" alt="Alt text" src="images/2-1.png">
+ 2. 在 _**文件夹外**_ 新建一个 EXCEL 文件，打开文件，依次点击 `数据` -> `获取数据` -> `从文件` -> `文件夹`。
+    <img title="a title" alt="Alt text" src="images/2-2.png">
+ 3. 选择文件夹地址，点击打开。
+    <img title="a title" alt="Alt text" src="images/2-3.png">
+ 4. 点击 `转换数据` ，进入 `Power Query` 编辑器。这里点击它最左边的按钮 `合并` 可以直接越过后面的 5，6，7 步骤，但我们总是建议 `转换数据` 以详细的查看与自定义编辑。
+    <img title="a title" alt="Alt text" src="images/2-4.png"> 
+ 5. 点击 `合并文件` 按钮。
+    <img title="a title" alt="Alt text" src="images/2-5.png"> 
+ 6. 选择 sheet 名字，预览一下是不是妳想合并的内容，点击 `OK` 。
+    <img title="a title" alt="Alt text" src="images/2-6.png"> 
+ 7. `Power Query` 编辑器会自动添加一个列，注明文件名字。
+    <img title="a title" alt="Alt text" src="images/2-7.png">
+ 8. 选择 `关闭并加载至` ，将拼接好的文件输出到一个新的 Excel sheet 中。生成的表格为 `Excel 超级表` 。
+    <img title="a title" alt="Alt text" src="images/2-8.png">
+
+## 方法二的优缺点
+
+ 1. **优点**
+    * 可处理 `.xlsx` `.xlsb` 等格式的表格。
+    * `Power Query` 在操作上用户友好，可定制化生成最终表格，如添加 `表格来源` 列等。
+    * 对于合并同一个表格中多个 sheet 情景同样适用 (在方法三中进行说明)。
+ 2. **缺点**
+    * 相较于 `命令行 CMD` 方法所需时间长，可能会遇到一些 errors。
+    * 需要调整所有表格的 sheet 名字一致。
+
+
+## 方法三：Power Query -- 合并同一个文件中多个 sheets
+
+ 1. 如果妳有一个 EXCEL 文件，想要合并其中的很多个 sheets。
+    <img title="a title" alt="Alt text" src="images/3-1.png">
+ 2. 新建一个 EXCEL 文件，打开文件，依次点击 `数据` -> `获取数据` -> `从文件` -> `从 EXCEL 文件`。选择文件并点击打开。
+    <img title="a title" alt="Alt text" src="images/3-2.png">
+ 3. 左键选择点击文件夹，再点击 `转换数据` ，进入 `Power Query` 编辑器。
+    <img title="a title" alt="Alt text" src="images/3-3.png">
+ 4. 在第二列 `数据` 处点击按钮并选择 OK。
+    <img title="a title" alt="Alt text" src="images/3-4.png">
+ 5. 做些数据处理，如删除不需要的列，修改列的名字等。同方法二中最后一步，选择 `关闭并加载至` 。
 ****
 
-|Author|Tandesen|
-|---|---
-|EY_Profile|[![EY-profile]][homepage]
-|Favorites|Potato and Ice-tea!
-|Contact|![Contact]
-
-
-****
-## Ways to Open CMD Command Line
-* `WIN + R` and type `cmd` and hit `ENTER`.
-* Open a file folder and type `%comspec%`, then hit `Enter`. This way you go directly to the folder path by default.  
-![98年我玩不过她](comspec.png)
-
-## Basic CMD Commands
-* `cd + filepath`: Enter that file path location.
-* `cd..` : Return to the former file path location.
-* `mkdir + ' ' + filename` : Create single folder in the current file path location.
-* `md + ' ' + filename1 + ' ' + filename2 + ...` : Create multiple folders in the current file path location.
-* `dir` : Show info of all files in the current file path location.
-* `ren + ' ' + filename1 + ' ' + filename2` : Rename filename1 as filename2.
-* `COPY + ' ' + filepath1\filename1 + ' ' + filepath2\filename2` : Copy filename1 to filename2.
-* `move + ' ' + filepath1\filename1 + ' ' + filepath2\filename2` : Move filename1 to filename2.  
-
-## Some Tricks
-* [Merge Multiple CSV Files](https://blog.csdn.net/weixin_43789661/article/details/106504358?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase)(from Joy:smirk:)
-
-Just explore more by Google search or Baidu search! [This link](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) may help as well.
-
-___Note:___ Please DO use a text editor such as sublime to generate multiple lines of codes which makes your life much easier. You may wanna refer to the sublime folder for more information. **(Upload gif figures for renaming multiple files names in the meantime)**
-
---------------------------------
-[homepage]:https://people.ey.com/PersonImmersive.aspx?accountname=i%3A0%23%2Ef%7Cmembership%7Cmark%2Es%2Etan%40cn%2Eey%2Ecom "My real name is Tandesen! Bazinga!"
-[EY-profile]:https://img.shields.io/badge/Tandesen-EY__Profile-blue
-[Contact]:https://img.shields.io/badge/Wechat-markts28-brightgreen "Add me beauties!"
 
