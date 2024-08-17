@@ -50,11 +50,11 @@
 
 ## 方法二：Power Query -- Excel 21 世纪最大的福音！
 
- 1. **将 EXCEL 文件们放在同一个文件夹中 (支持文件格式为 `.xlsx` 或 `.xlsb` 等)，并确保他们的 sheet 名字都是一样的，比如都叫 `Sheet1`。**
+ 1. **将 EXCEL 文件们放在同一个文件夹中（支持 `.xlsx` 或 `.xlsb` 等格式），并确保他们的 sheet 名字都是一样的，比如都叫 `Sheet1`**  
     <img title="a title" alt="Alt text" src="images/2-1.png">
  3. **在 _**文件夹外**_ 新建一个 EXCEL 文件，打开文件，依次点击 `数据` -> `获取数据` -> `从文件` -> `文件夹`。**
     <img title="a title" alt="Alt text" src="images/2-2.png">
- 4. **选择文件夹地址，点击打开。**
+ 4. **选择文件夹（包括了需要合并的文件们）地址，点击打开。**
     <img title="a title" alt="Alt text" src="images/2-3.png">
  5. **点击 `转换数据` ，进入 `Power Query` 编辑器。这里点击它最左边的按钮 `合并` 可以直接越过后面的 5，6，7 步骤，但我们总是建议 `转换数据` 以详细的查看与自定义编辑。**
     <img title="a title" alt="Alt text" src="images/2-4.png"> 
